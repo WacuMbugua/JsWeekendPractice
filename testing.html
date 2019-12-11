@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body">
+<div>
+<h1>Form demo.. </h1>
+<p>Welcome to my wesbite! Please fill in the boxes below  </p>
+<form id="contact" method="post" action="">
+   <label for="firstName"> First Name</label>
+   <input type="text" name="firstName" placeholder="First Name" required /><br>
+   <br>
+    <label for="lastName">Last Name</label>
+    <input type="text" name="lastName" placeholder="Last Name" /><br>
+    <br>
+    <label for="email">Email</label> 
+    <input type="email" name="email" placeholder="email" /><br>
+    <br>
+    <label for="contact">Contact</label> 
+    <input type="number" name="Contact" placeholder="Contact Number"/> <br>
+    <br>
+    <button type="submit" class="btn">Login</button>
+</form>
+</div>
+<div>
+</script>
+
+</div>
+<h2> This is another section. </h2>
+
+<p> Coding is awesome! </p>
+
+<script>
+    var x = document.getElementById("demo");
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showPosition);
+      } else {
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }
+    
+    function showPosition(position) {
+      x.innerHTML = "Latitude: " + position.coords.latitude +
+      "<br>Longitude: " + position.coords.longitude;
+    }
+</body>
+</html>
